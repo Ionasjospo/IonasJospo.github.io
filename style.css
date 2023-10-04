@@ -1,0 +1,224 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.logo{
+    width: 170px;
+    height: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.searchBtn{
+    position: relative;
+    left: 1000px;
+    top: -180px;
+}
+
+.welcome{
+    padding: 20px;
+    position: relative;
+    top: -180px;
+    left: 20px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 80px;       
+    top: -110px;
+    left: 170px;
+    
+}
+
+.imgCarusel{
+    width: 300px;
+    height: auto;
+}
+.comodidad{
+    position: relative;
+    top: -750px;
+    left: 650px;
+
+}
+
+.elegirnos{
+    position: relative;
+    top: -950px;
+    left: -350px;
+}
+
+.tuBuzo{
+    position: relative;
+    top: -1245px;
+    left: 250px;
+}
+.textComodidad{
+    text-align: left;
+}
+
+.up{
+    position: relative;
+    top: -20px;
+}
+
+.imgECO{
+position: relative;
+top: -100px;
+left: -250px;
+}
+
+.compra{
+    position: relative;
+    top: -1300px;
+}
+
+footer{
+    position: relative ;
+    top: -1250px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #fff;
+    color: #333;
+}
+
+.section-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+/* Estilos para botones */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+
+/* Estilos para los botones del navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+/* Estilo para el botón de búsqueda */
+.navbar input[type="text"] {
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    left: 600px;
+}
+
+/* Estilo para el botón de búsqueda */
+.navbar input[type="submit"] {
+    float: right;
+    background-color: #555; /* Color de fondo del botón de búsqueda */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambiar color del botón cuando se pasa el cursor sobre él */
+.navbar input[type="submit"]:hover {
+    background-color: #288aa8;
+}
+
+/*---------Caruosel---------------------*/
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    position: relative;
+    left: 40px;
+}
+
+.carousel-slide img {
+    
+    width: 40%;
+    height: 500px;
+    display: block;
+}
+
+
+.prevBtn{
+    position: relative;
+    top: -300px;
+
+}
+.nextBtn{
+    position: relative;
+}   
+

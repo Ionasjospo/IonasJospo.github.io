@@ -8,16 +8,9 @@ body {
 }
 
 .logo{
-    width: 170px;
-    height: auto;
-    margin-top: -60px;
+    width: 200px;
 }
 
-.searchBtn{
-    position: relative;
-    left: 1000px;
-    top: -180px;
-}
 
 li {
     list-style: none;
@@ -26,30 +19,7 @@ li {
     list-style-position: inside;
 }
 
-/* Estilos para el navbar */
-.navbar {
-    overflow: hidden;
-    position: relative;
-    width: auto;
-    height: 80px;       
-    top: -110px;
-    left: 170px;
-    
-}
 
-
-
-.elegirnos{
-    position: relative;
-    top: -950px;
-    left: -350px;
-}
-
-.tuBuzo{
-    position: relative;
-    top: -1245px;
-    left: 250px;
-}
 .textComodidad{
     text-align: left;
 }

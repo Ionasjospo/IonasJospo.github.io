@@ -1,82 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organic Black Eco-Friendly</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Enlaza a Bootstrap CSS (Estilos) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Enlaza a Bootstrap JavaScript (funcionalidad adicional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+</head>
 
-    <!-- Navbar -->
-    <img class="logo" src="logobuzo.png">
-    <div class="navbar">
-        
-        
-        <a href="#inicio">Inicio</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#quienes-somos">Quiénes Somos</a>
-        <a href="#ayuda">Ayuda</a>
+<body>
+    
+
+    <div class="container  mb-n5 mt-5 mb-0 ml-2">
+        <div class="row">
+            <div class="col-2"><img class="logo" src="logobuzo.png"></div>
+            <div class="col-2"><a class="btn btn-light" href="#inicio">Inicio</a></div>
+            <div class="col-2"><a class="btn btn-light" href="#catalogo">Catálogo</a></a></div>
+            <div class="col-2"><a class="btn btn-light" href="#quienes-somos">Quiénes Somos</a></a></div>
+            <div class="col-2"><a class="btn btn-light" href="#ayuda">Ayuda</a></a></div>   
+            <!--
+                <form class="searchBtn" action="/buscar" method="get">
+                    <input type="text" placeholder="Buscar..." name="q">
+                    <input type="submit" value="Buscar">
+                </form> -->
+            </div>
         </div>
-        <form class= "searchBtn" action="/buscar" method="get">
-            <input type="text" placeholder="Buscar..." name="q">
-            <input type="submit" value="Buscar">
-        </form>
-        
     </div>
 
-    <!-- Contenido de la página -->
-    <div class="welcome" >
-        <!-- Aquí va el contenido de tu página -->
-        <h2>Bienvenido a Organic Black</h2>
-        <p>Explora nuestro catálogo, conoce quiénes somos y encuentra el buzo que necesitas.</p>
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img class="imgCarusel" src="buzo.jpeg" alt="Imagen 1">
+
+
+
+    </div>
+
+    <div class="container-fluid mb-0 mt-n5 ml-5 ">
+        <div class="row">
+            <div class="col-12">
+                <!-- Contenido de la página -->
+                <div class="welcomex">
+                    <!-- Aquí va el contenido de tu página -->
+                    <h2>Bienvenido a Organic Black</h2>
+                    <p>Explora nuestro catálogo, conoce quiénes somos y encuentra el buzo que necesitas.</p>
+                    <script src="script.js"></script>
+                </div>
             </div>
-            <div class="carousel-slide">
-                <img class="imgCarusel" src="buzo3.jpeg" alt="Imagen 2">
-            </div>
+        </div>
+    </div>
+
+    <div class="container mt-n4 mb-n5 ml-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img class="imgCarusel" src="buzo.jpeg" alt="Imagen 1">
                     </div>
-        <script src="script.js"></script>
+                    <div class="carousel-slide">
+                        <img class="imgCarusel" src="buzo3.jpeg" alt="Imagen 2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <section class="comodidadx">
+                    <h3 class="textComodidad">Descubre la Comodidad</h3>
+                    <p class="textComodidad">Nuestros buzos de algodón orgánico ofrecen la máxima comodidad y estilo.
+                    </p>
+                    <p class="textComodidad up">Diseñados pensando en ti y en el planeta.</p>
+                    <img class="imgECO" src="eco.png" alt="Nuestros productos">
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-n5 mb-n5 ml-5">
+        <div class="row">
+            <div class="col-md-6">
+                <section class="elegirnosx">
+                    <h2>Por Qué Elegirnos</h2>
+                    <ul>
+                        <li>Diseños únicos y atractivos</li>
+                        <li>Producción ética y sostenible</li>
+                        <li>Materiales de alta calidad</li>
+                        <li>Compromiso con el medio ambiente</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="tuBuzox">
+                    <h2>Tu Estilo, Tu Buzo</h2>
+                    <ul>
+                        <li>Personaliza tu buzo con inteligencia artificial.</li>
+                        <li>Crea un diseño que refleje tu personalidad y estilo.</li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
     </div>
 
 
-    <section class="comodidad">
-        <h3 class="textComodidad">Descubre la Comodidad</h3>
-        <p class="textComodidad">Nuestros buzos de algodón orgánico ofrecen la máxima comodidad y estilo.</p>
-        <p class="textComodidad up">Diseñados pensando en ti y en el planeta.</p>
-        <img class="imgECO" src="eco.png" alt="Nuestros productos">
-    
-        
-        
-    </section>
-    <section class="elegirnos">
-        <h2>Por Qué Elegirnos</h2>
-        <ul>
-            <li>Diseños únicos y atractivos</li>
-            <li>Producción ética y sostenible</li>
-            <li>Materiales de alta calidad</li>
-            <li>Compromiso con el medio ambiente</li>
-        </ul>
-    </section>
-    <section class="tuBuzo">
-        <h2>Tu Estilo, Tu Buzo</h2>
-        <ul>
-            <li>Personaliza tu buzo con inteligencia artificial.</li>
-            <li>Crea un diseño que refleje tu personalidad y estilo.</li>
-        </ul>
-    </section>
-    
-    <section class="compra">
-        <hr>
-        <h2>Compra Ahora</h2>
-        <p>Únete a la moda sostenible. Obtén tu buzo eco-friendly hoy mismo.</p>
-        <a href="#compra" class="btn">¡Compra Ahora!</a>
-    </section>
-    <footer>
-        <p>&copy; 2023 Organic Black Eco-Friendly</p>
-    </footer>
+    <div class="container mt-n5 mb-n5 ml-5">
+        <div class="row">
+            <div class="col-12">
+                <section class="comprax">
+                    <hr>
+                    <h2>Compra Ahora</h2>
+                    <p>Únete a la moda sostenible. Obtén tu buzo eco-friendly hoy mismo.</p>
+                    <a href="#compra" class="btn">¡Compra Ahora!</a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-n5 mb-n5 ml-5">
+        <div class="row">
+            <div class="col-12">
+                <footer>
+                    <p>&copy; 2023 Organic Black Eco-Friendly</p>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

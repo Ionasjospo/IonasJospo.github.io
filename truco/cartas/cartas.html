@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a jugar al truco</title>
+    <!-- Incluye los enlaces a los archivos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlaza el archivo CSS personalizado -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cartas.html">Cartas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="flor.html">Flor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Envido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Otro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-12 text-center">
+                <h1>Jerarquia de Cartas</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <p>Dependiendo de la muestra que toque, las cartas importantes seran unas o otras. Seleccione la muestra que
+                    tocó: </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Número de la muestra</label>
+                        <input type="email" class="form-control" id="ncarta" aria-describedby="emailHelp"
+                            placeholder="Ingresa carta">
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="col-md-4 mt-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Palo
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick="updateButton('oro')">Oro</a>
+                            <a class="dropdown-item" href="#" onclick="updateButton('espada')">Espada</a>
+                            <a class="dropdown-item" href="#" onclick="updateButton('basto')">Basto</a>
+                            <a class="dropdown-item" href="#" onclick="updateButton('copa')">Copa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <button type="submit" class="btn btn-primary" onclick="mostrarCartas()">Ver</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-3" id="muestra">
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12 mt-3" id="las_muestras">
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 mt-3 ml-1" id="muestra1">
+
+            </div>
+            <div class="col-md-2 mt-3 ml-1" id="muestra2">
+
+            </div>
+            <div class="col-md-2 mt-3 ml-1" id="muestra3">
+
+            </div>
+            <div class="col-md-2 mt-3 ml-1" id="muestra4">
+
+            </div>
+            <div class="col-md-2 mt-3 ml-1" id="muestra5">
+
+            </div>
+
+        </div>
+
+
+        
+
+
+
+        <div class="row" id="oculto1" style="display: none;">
+            <div class="col-md-12 mt-3" id="las_matas">
+                <h3>Las matas son:</h3>
+            </div>
+
+        </div>
+        <div class="row"  id="oculto2" style="display: none;">
+            <div class="col-md-3 mt-3" id="mata1">
+                <img src="../img/espada/espada1.png">
+            </div>
+            <div class="col-md-3 mt-3" id="mata2">
+                <img src="../img/basto/basto1.png">
+            </div>
+            <div class="col-md-3 mt-3" id="mata3">
+                <img src="../img/espada/espada7.png">
+            </div>
+            <div class="col-md-3 mt-3" id="mata4">
+                <img src="../img/oro/oro7.png">
+            </div>
+
+        </div>
+
+
+        <div class="row" id="oculto3" style="display: none;">
+            <div class="col-md-12 mt-3" id="las_matas">
+                <h3>Las restantes son:</h3>
+                <p>Cualquier 3 <br> Cualquier 2 <br> Cualquier 1 <br>Cualquier 12 <br> Cualquier 11
+                <br> Cualquier 10 <br> Cualquier 7 <br> Cualquier 6 <br> Cualquier 6 <br> Cualquier 5
+                <br> Cualquier 4</p>
+            </div>
+
+        </div>
+
+
+        <img src="" alt="">
+    </div>
+
+    <script src="cartas.js"></script>
+
+
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 Aprende a jugar </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

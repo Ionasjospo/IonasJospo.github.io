@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botón de Menú Desplegable</title>
+
+  <!-- Incluye Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+
+  <!-- Incluye Bootstrap JavaScript (jQuery y Popper.js se incluyen automáticamente) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Incluye los enlaces a los archivos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlaza el archivo CSS personalizado -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="..\index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cartas\cartas.html">Cartas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="flor\flor.html">Flor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Envido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active">Otro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid mt-4">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-12 text-center">
+        <h1>Calcula los puntos de tu flor: </h1>
+      </div>
+    </div>
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8">
+          <input type="email" class="form-control" id="ncarta" aria-describedby="emailHelp"
+            placeholder="Ingresa la muestra">
+        </div>
+        <div class="col-md-4 mt-2">
+          
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Palo
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" onclick="updateButton('oro')">Oro</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('espada')">Espada</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('basto')">Basto</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('copa')">Copa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+      </div>
+
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 mt-4 ml-5  ">
+          <input type="email" class="form-control" id="ncarta" aria-describedby="emailHelp"
+            placeholder="Ingresa tu primer carta">
+        </div>
+        <div class="col-md-4 mt-2 ml-5">
+          
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Palo
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" onclick="updateButton('oro')">Oro</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('espada')">Espada</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('basto')">Basto</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('copa')">Copa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+      </div>
+
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 mt-4 ml-5">
+          <input type="email" class="form-control" id="ncarta" aria-describedby="emailHelp"
+            placeholder="Ingresa tu segunda carta">
+        </div>
+        <div class="col-md-4 mt-2 ml-5">
+          
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Palo
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" onclick="updateButton('oro')">Oro</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('espada')">Espada</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('basto')">Basto</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('copa')">Copa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+      </div>
+
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 mt-2 ml-5">
+          <input type="email" class="form-control" id="ncarta" aria-describedby="emailHelp"
+            placeholder="Ingresa tu tercera carta">
+        </div>
+        <div class="col-md-4 mt-4 ml-5">
+          
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Palo
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" onclick="updateButton('oro')">Oro</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('espada')">Espada</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('basto')">Basto</a>
+                        <a class="dropdown-item" href="#" onclick="updateButton('copa')">Copa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4 mt-3">
+        <button type="submit" class="btn btn-primary" onclick="mostrarCartas()">Calcular</button>
+    </div>
+
+  </div>
+
+
+
+  <div class="container-fluid mt-4">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-12 text-center">
+        <h1>Existen 3 tipos de flores: </h1>
+      </div>
+      <div class="col-md-12 text-center">
+        <h2> Si la muestra es </h2>
+        <img src="../img/espada/espada7.png">
+      </div>
+      <div class="col-md-12 text-center">
+        <h3>3 muestras: </h3>
+      </div>
+      <div class="col-md-4"> <img src="../img/espada/espada2.png"></div>
+      <div class="col-md-4"> <img src="../img/espada/espada5.png"></div>
+      <div class="col-md-4"> <img src="../img/espada/espada11.png"></div>
+      <div class="col-md-12 text-center">
+        <h3>1 muestra y 2 del mismo palo: </h3>
+      </div>
+      <div class="col-md-4"> <img src="../img/espada/espada5.png"></div>
+      <div class="col-md-4"> <img src="../img/copa/copa3.png"></div>
+      <div class="col-md-4"> <img src="../img/copa/copa7.png"></div>
+      <div class="col-md-12 text-center">
+        <h3>3 del mismo palo: </h3>
+      </div>
+      <div class="col-md-4"> <img src="../img/oro/oro10.png"></div>
+      <div class="col-md-4"> <img src="../img/oro/oro6.png"></div>
+      <div class="col-md-4"> <img src="../img/oro/oro1.png"></div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

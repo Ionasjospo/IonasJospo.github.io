@@ -1,0 +1,13 @@
+/* Agrega la fuente de Google Fonts a tu documento */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Aplica la fuente Open Sans a todos los elementos de la página */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Si deseas cambiar el tamaño o el estilo de la fuente, puedes hacerlo aquí */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    /* Agrega otros estilos de fuente, como el tamaño y el peso (por ejemplo, font-size: 24px;) */
+}

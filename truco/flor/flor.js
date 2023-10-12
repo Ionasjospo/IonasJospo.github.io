@@ -2168,19 +2168,16 @@ function flor1Muestra(num_muestra, palo_muestra, num_c1, palo_c1, num_c2, palo_c
         //Identifica la muestra y las 2 que no son muestras
         if (pal12.includes(num_c1) && palo_muestra == palo_c1) {
             la_muestra = num_c1
-        } else {
             las_2_no_muestras.push("c2")
             las_2_no_muestras.push("c3")
-        }
+        } 
         if (pal12.includes(num_c2) && palo_muestra == palo_c2) {
             la_muestra = num_c2
-        } else {
             las_2_no_muestras.push("c1")
             las_2_no_muestras.push("c3")
         }
         if (pal12.includes(num_c3) && palo_muestra == palo_c3) {
             la_muestra = num_c3
-        } else {
             las_2_no_muestras.push("c1")
             las_2_no_muestras.push("c2")
         }
@@ -2303,37 +2300,37 @@ function flor1Muestra(num_muestra, palo_muestra, num_c1, palo_c1, num_c2, palo_c
             if (palo_c1 == palo_c3) {
                 switch (num_c2) {
                     case 2:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 30 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 4:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 29 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 5:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 28 por el " + num_c2 + " de" + palo_muestra
                         }
                         break;
                     case 11:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 27 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 10:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 27 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 12:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_muestra]
                             explicacion += "\nSe suma " + valores[num_muestra] + " por el " + num_muestra + " de " + palo_muestra
                         }
@@ -2415,37 +2412,37 @@ function flor1Muestra(num_muestra, palo_muestra, num_c1, palo_c1, num_c2, palo_c
             if (palo_c1 == palo_c2) {
                 switch (num_c3) {
                     case 2:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 30 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 4:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 29 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 5:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 28 por el " + num_c3 + " de" + palo_muestra
                         }
                         break;
                     case 11:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 27 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 10:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 27 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 12:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_muestra]
                             explicacion += "\nSe suma " + valores[num_muestra] + " por el " + num_muestra + " de " + palo_muestra
                         }
@@ -2529,23 +2526,20 @@ function flor1Muestra(num_muestra, palo_muestra, num_c1, palo_c1, num_c2, palo_c
 
         //Identifica la muestra y las 2 que no son muestras
         if (muestras.includes(num_c1) && palo_muestra == palo_c1) {
-            la_muestra = "c1"
-        } else {
+            la_muestra = num_c1
             las_2_no_muestras.push("c2")
             las_2_no_muestras.push("c3")
         }
         if (muestras.includes(num_c2) && palo_muestra == palo_c2) {
-            la_muestra = "c2"
-        } else {
+            la_muestra = num_c2
             las_2_no_muestras.push("c1")
             las_2_no_muestras.push("c3")
-        }
+        } 
         if (muestras.includes(num_c3) && palo_muestra == palo_c3) {
-            la_muestra = "c3"
-        } else {
+            la_muestra = num_c3
             las_2_no_muestras.push("c1")
             las_2_no_muestras.push("c2")
-        }
+        } 
 
         if (la_muestra == num_c1) {
             if (palo_c2 == palo_c3) {
@@ -2657,31 +2651,31 @@ function flor1Muestra(num_muestra, palo_muestra, num_c1, palo_c1, num_c2, palo_c
             if (palo_c1 == palo_c3) {
                 switch (num_c2) {
                     case 2:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 30 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 4:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 29 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 5:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 28 por el " + num_c2 + " de" + palo_muestra
                         }
                         break;
                     case 11:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 27 por el " + num_c2 + " de " + palo_muestra
                         }
                         break;
                     case 10:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c2 == palo_muestra) {
                             totalFlor += valores[num_c2]
                             explicacion += "\nSe suma 27 por el " + num_c2 + " de " + palo_muestra
                         }
@@ -2764,31 +2758,31 @@ function flor1Muestra(num_muestra, palo_muestra, num_c1, palo_c1, num_c2, palo_c
             if (palo_c1 == palo_c2) {
                 switch (num_c3) {
                     case 2:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 30 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 4:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 29 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 5:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 28 por el " + num_c3 + " de" + palo_muestra
                         }
                         break;
                     case 11:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 27 por el " + num_c3 + " de " + palo_muestra
                         }
                         break;
                     case 10:
-                        if (palo_c1 == palo_muestra) {
+                        if (palo_c3 == palo_muestra) {
                             totalFlor += valores[num_c3]
                             explicacion += "\nSe suma 27 por el " + num_c3 + " de " + palo_muestra
                         }

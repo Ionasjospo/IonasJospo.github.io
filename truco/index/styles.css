@@ -39,7 +39,9 @@ body {
 .card img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
+
 
 .card h3 {
     font-size: 24px;
